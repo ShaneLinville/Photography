@@ -9,25 +9,27 @@ text-align:center;
 }
 .intro {
   top: 0;
-  background-image: url("assets/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
   min-height: 55vh;
-  padding-top: 45vh;
+  padding-top: 25vh;
   border: solid;
   border-bottom: solid;
   border-top: solid;
   color:  #F5F5DC;
-  font-family:'Tangerine', cursive;
+  font-family: 'Playfair Display', serif;
+
 }
 
 .intro h1{
-	font-size: 76px;
+	font-size: 64px;
+	color: 	#008B8B;
 }
 
 .intro p{
-	font-size: 48px;
+	font-size: 40px;
+	color: #2F4F4F;
 }
 nav ul {
   text-align: right;
@@ -35,6 +37,7 @@ nav ul {
   width: 100%;
   background-color: #F5F5DC	;
   border-bottom: solid;
+  font-family: 'Slabo 27px', serif;
 }
 nav ul li {
   display: inline-block;
@@ -52,37 +55,39 @@ nav ul li a:hover {
 }
 
 .portfolio {
-  padding-top: 75px;
+	min-height:65vh;
+  padding-top: 25Vh;
   margin-top: -75px;
-  font-family: 'Tangerine', cursive;
-  font-size: 48px;
+ font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color:#008B8B;
 }
 
 .contact {
 	 min-height: 55vh;
-  padding-top: 45vh;
-  border: solid;
+  padding-top: 25vh;
   border-bottom: solid;
   border-top: solid;
 }
 
 .contact h2
 {
-	font-family: 'Tangerine', cursive;
-	font-size: 48px;
+	font-family: 'Playfair Display', serif;
+	font-size: 40px;
 }
 
 .about  {
-	min-height: 55vh;
-  padding-top: 45vh;
-  border: solid;
+	min-height: 45vh;
+  padding-top: 15vh;
+  padding-bottom: 25px;
   border-bottom: solid;
   border-top: solid;
 }
 
 .about h2 {
-	font-family: 'Tangerine', cursive;
-	font-size: 48px;
+	font-family: 'Playfair Display', serif;
+	font-size: 40px;
+	color:#008B8B;
 }
 img {
 	padding:5px;
@@ -103,8 +108,8 @@ img {
   background: #e0ebe8;
   color: #008080;
   text-decoration: none;
-  font-family: 'Tangerine', cursive;
-  font-size: 24px;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
 }
 @media only screen and (max-width: 500px) {
   nav ul {
@@ -138,21 +143,23 @@ footer a {
   color: white;
 }
 
-.row {
-    display: flex;
-}
-
-/* Create three equal columns that sits next to each other */
 .column {
-    flex: 33.33%;
-    padding: 5px;
+    float: left;
+    width: 50%;
+    padding: 10px;
 }
 
 .column img {
-    margin-top: 8px;
-    vertical-align: middle;
+    margin-top: 12px;
 }
 
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+}
 @media screen and (max-width: 500px) {
   .column {
     width: 100%;
