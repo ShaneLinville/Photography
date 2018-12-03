@@ -1,43 +1,48 @@
 html,body {
-font-family:arial;
+font-family:'Eurostile';
 text-align:center;	
+background:  #ffffe6;
 }
 
 * {
   margin: 0;
   padding: 0;
 }
+@font-face {
+font-family: myFonts;
+src: url(fonts/Eurostile.ttf);
+}
+
+
 .intro {
   top: 0;
+  min-height: 45vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
-  min-height: 55vh;
   padding-top: 25vh;
-  border: solid;
-  border-bottom: solid;
   border-top: solid;
-  color:  #F5F5DC;
-  font-family: 'Playfair Display', serif;
+  font-family: 'eurostile';
 
 }
 
 .intro h1{
 	font-size: 64px;
-	color: 	#008B8B;
+	color: 	#3d3d29;
 }
 
 .intro p{
-	font-size: 40px;
-	color: #2F4F4F;
+	font-size: 24px;
+	color: #3d3d29;
 }
 nav ul {
-  text-align: right;
+  text-align: center;
   position: fixed;
   width: 100%;
-  background-color: #F5F5DC	;
+  background-color:  #3d3d29	;
   border-bottom: solid;
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Eurostile';
+  font-size: 24px;
 }
 nav ul li {
   display: inline-block;
@@ -47,47 +52,50 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #008080;
+  color: #ffffe6;
   text-decoration: none;
 }
 nav ul li a:hover {
   color: green;
 }
 
-.portfolio {
+.work {
 	min-height:65vh;
-  padding-top: 25Vh;
-  margin-top: -75px;
- font-family: 'Playfair Display', serif;
+
+ font-family: 'Eurostile';
   font-size: 40px;
-  color:#008B8B;
+  color:#3d3d29;
 }
 
 .contact {
 	 min-height: 55vh;
   padding-top: 25vh;
-  border-bottom: solid;
   border-top: solid;
+  font-family: 'Eurostile';
+  color: 	#3d3d29;
 }
 
 .contact h2
 {
-	font-family: 'Playfair Display', serif;
 	font-size: 40px;
 }
 
-.about  {
+.contact p {
+font-size: 24px;
+}
+
+.bio  {
 	min-height: 45vh;
   padding-top: 15vh;
   padding-bottom: 25px;
   border-bottom: solid;
   border-top: solid;
+  font-family: 'Eurostile';
+  color: 	#3d3d29;
 }
 
-.about h2 {
-	font-family: 'Playfair Display', serif;
+.bio h2 {
 	font-size: 40px;
-	color:#008B8B;
 }
 img {
 	padding:5px;
@@ -96,20 +104,16 @@ img {
 	
 }
 .contact-details {
-  display: inline-block;
   font-weight: bold;
   margin: 0 35px 45px 35px;
   list-style-type: none;
-  border: 2px solid #90C695;
-  
   width: 150px;
   height: 150px;
   line-height: 100px;
-  background: #e0ebe8;
   color: #008080;
   text-decoration: none;
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
+  font-family: 'Eurostile';
+  font-size: 24px;
 }
 @media only screen and (max-width: 500px) {
   nav ul {
@@ -121,9 +125,6 @@ img {
   .project {
     margin: 40px 0;
   }
-  .column {
-    width: 100%;
-}
 
 .contact {
   /*   height:800px; */
@@ -134,34 +135,44 @@ img {
 
 footer {
   padding: 20px;
-  background: #22313F;
   line-height: 40px;
-  font-size: 12px;
+  font-size: 10px;
+  font-family: 'Eurostile';
 }
 
-footer a {
-  color: white;
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
+/* Create four equal columns that sits next to each other */
 .column {
-    float: left;
-    width: 50%;
-    padding: 10px;
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
 }
 
 .column img {
-    margin-top: 12px;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-}
-@media screen and (max-width: 500px) {
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
   .column {
-    width: 100%;
+    flex: 75%;
+    max-width: 75%;
   }
 }
