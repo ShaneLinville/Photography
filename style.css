@@ -20,7 +20,7 @@ src: url(fonts/Eurostile.ttf);
   background-position: center;
   background-size: auto;
   padding-top: 25vh;
-  border-top: solid;
+  border-top: solid 0.5px;
   font-family: 'eurostile';
 
 }
@@ -35,23 +35,24 @@ src: url(fonts/Eurostile.ttf);
 	color: #3d3d29;
 }
 nav ul {
-  text-align: center;
-  position: fixed;
+  /*text-align: center;*/
+  /*position: fixed;*/
   width: 100%;
-  background-color:  #B9B2B2	;
-  border-bottom: solid;
   font-family: 'Eurostile';
-  font-size: 24px;
+  font-size: 16px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 nav ul li {
-  display: inline-block;
+  /*display: inline-block;*/
   margin: 55px;
   margin-bottom: 15px;
   margin-top: 25px;
 }
 
 nav ul li a {
-  color: #ffffe6;
+  color: #3d3d29;
   text-decoration: none;
 }
 
@@ -66,7 +67,7 @@ nav ul li a {
 .contact {
 	 min-height: 55vh;
   padding-top: 25vh;
-  border-top: solid;
+  border-top: solid 0.5px;
   font-family: 'Eurostile';
   color: 	#3d3d29;
 }
@@ -84,8 +85,7 @@ font-size: 24px;
 	min-height: 45vh;
   padding-top: 15vh;
   padding-bottom: 25px;
-  border-bottom: solid;
-  border-top: solid;
+  border-top: solid 0.5px;
   font-family: 'Eurostile';
   color: 	#3d3d29;
 }
@@ -96,7 +96,7 @@ font-size: 24px;
 img {
 	padding:5px;
 	margin:5px;
-	width: 35%;
+	width: 45%;
 }
 .contact-details {
   font-weight: bold;
@@ -159,15 +159,15 @@ footer {
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
-    flex: 50%;
-    max-width: 50%;
+    flex: 75%;
+    max-width: 75%;
   }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
-    flex: 75%;
-    max-width: 75%;
+    flex: 90%;
+    max-width: 90%;
   }
 }
