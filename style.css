@@ -35,6 +35,10 @@ li.menu {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-top: solid 0.5px;
+  border-bottom: solid 0.5px;
+  border-right: solid 0.5px;
+  border-left: solid 0.5px;
 }
 
 .menu-content a {
@@ -43,6 +47,7 @@ li.menu {
   text-decoration: none;
   display: block;
   text-align: left;
+  border-top: solid 0.5px;
 }
 
 .menu-content a:hover {background-color: #f1f1f1}
@@ -72,6 +77,35 @@ li.menu {
 	font-size: 24px;
 	color: #3d3d29;
 }
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 36px;
+  width: 15px;
+  text-align: center;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  /*background: #3B5998;*/
+  color: #3d3d29;
+}
+
+/* Instagram */
+.fa-instagram {
+  /*background: #55ACEE;*/
+  color: #3d3d29;
+}
+
 nav ul {
   text-align: center;
   background-color:  #FEFEFE;
@@ -118,6 +152,18 @@ nav ul li a {
 
 .contact p {
 font-size: 24px;
+}
+.approach {
+   min-height: 45vh;
+  padding-top: 15vh;
+  padding-bottom: 25px;
+  border-top: solid 0.5px;
+  font-family: 'Eurostile';
+  color: 	#3d3d29;
+}
+
+.approach h2{
+font-size: 40px;
 }
 
 .bio  {
@@ -172,6 +218,7 @@ footer {
   line-height: 40px;
   font-size: 10px;
   font-family: 'Eurostile';
+  padding-bottom: 5px;
 }
 
 
