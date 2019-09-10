@@ -258,10 +258,7 @@ footer {
 .column img {
     margin-top: 8px;
     vertical-align: middle;
-	margin-top: 25px;
-  width: 200px;
-  height: 200px;
-  border-radius: 25px 25px 25px 25px;
+
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
