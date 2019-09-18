@@ -8,11 +8,13 @@
 <meta name="google-site-verification" content="LpqArh4ZfC01r_EYBPAhlvRkaPK_K9kdxjEI0wcrShU" />
 <link rel='stylesheet' href='style.css'/>
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="shortcut icon" href="assets/icon.ico">
 </head>
-<nav>
+<header>
+<nav class="navbar">
 <ul>
 <li class="menu">
     <a href="javascript:void(0)" class="menubtn"><i class="fa fa-angle-double-down"style="font-size:36px"></i></a>
@@ -24,8 +26,12 @@
       <a href="#contact">Contact</a>
 </ul>
 </nav>
+
+</header>
 <body>
-<div id="intro" class="intro">
+<section
+<div class="container">
+ <div id="intro" class="intro">
 <h1>Meagan Linville</h1>
 <p>Kansas City Lifestyle Photographer</p>
 <div class="social">
@@ -34,10 +40,13 @@
 <a href="mailto:meglinville@gmail.com" class="fa fa-envelope"></a>
 </div>
 </div>
+</div>
+</section>
+<section>
+<div class="container">
 
-<div id="work" class="work">
 <div class="row">
-	<div class="column">
+	<div class="col-4">
 		<img src="assets/image-8.jpg">
 		<img src="assets/image-2.jpg">
 		<img src="assets/image-5.jpg">
@@ -48,8 +57,12 @@
 		<img src="assets/image-12.jpg">
 		<img src="assets/image-13.jpg">
 		<img src="assets/image-14.jpg">
+		<img src="assets/image-44.jpg">
+		<img src="assets/image-45.jpg">
+		<img src="assets/image-42.jpg">
+		<img src="assets/image-43.jpg">
 		</div>
-		<div class="column">
+		<div class="col-4">
 		<img src="assets/image-15.jpg">
 		<img src="assets/image-19.jpg">
 		<img src="assets/image-17.jpg">
@@ -62,8 +75,11 @@
 		<img src="assets/image-24.jpg">
 		<img src="assets/image-25.jpg">
 		<img src="assets/image-26.jpg">
+		<img src="assets/image-41.jpg">
+		
+		
 		</div>
-		<div class="column">
+		<div class="col-4">
 		<img src="assets/image-27.jpg">
 		<img src="assets/image-28.jpg">
 		<img src="assets/image-29.jpg">
@@ -79,16 +95,10 @@
 		<img src="assets/image-39.jpg">
 		<img src="assets/image-40.jpg">
 		</div>
-		<div class="column">
-		<img src="assets/image-41.jpg">
-		<img src="assets/image-42.jpg">
-		<img src="assets/image-43.jpg">
-		<img src="assets/image-44.jpg">
-		<img src="assets/image-45.jpg">
 </div>
 </div>
-</div>
-
+</section>
+<div class="container">
 <div id="approach" class="approach">
 		<h2>Approach</h2>
 		
@@ -101,6 +111,8 @@
 		<p>Photo Credit: Jeremy Parson</p>
 	
 		</div>
+	</div>
+	<div class="container">
 		
 		<div id="contact" class="contact">
 		<h2>Get in touch</h2>
@@ -113,16 +125,16 @@
 	<input type="submit" value="Send"><input type="reset" value="Clear">
 		</form>-->
 		</div>
+	</div>
 		</body>
-<footer>
+		<div class="container">
+<footer style="text-align: center;">
 <a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-instagram"></a>
 <a href="mailto:meglinville@gmail.com" class="fa fa-envelope"></a>
 <p>@2019 Meagan Linville. All rights reserved.</p>
-
-
 </footer>
-
+</div>
 
 
 </html>
